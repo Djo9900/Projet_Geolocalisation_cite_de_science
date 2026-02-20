@@ -1,0 +1,1058 @@
+[
+    {
+        "id": "61bb8238135bd324",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "flow_main",
+        "type": "tab",
+        "label": "IIOT Tracker - Clean",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "0f06f7332fa830cd",
+        "type": "tab",
+        "label": "IIOT Tracker - Fullscreen",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "flow_static",
+        "type": "tab",
+        "label": "Static files (no httpStatic)",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1405c970a08f01b5",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#fb3c3c",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#fb3c3c",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#fb3c3c",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#fd8787",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#fb3c3c",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Arial,Arial,Helvetica,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "true",
+            "allowSwipe": "false",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ccc0e37407f82a58",
+        "type": "ui_group",
+        "name": "tonton",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cacd67b58037bd8f",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bfc110754694ac41",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "5a4cafdee3d41192",
+        "type": "ui_group",
+        "name": "Map",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8b8b04e9f841ce29",
+        "type": "mqtt-broker",
+        "name": "mqtt",
+        "broker": "bebdb8261f5e43f0a3a2f1560510608d.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "bfc110754694ac41",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "5",
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "grp_map",
+        "type": "ui_group",
+        "name": "Carte",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "broker_hivemq",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "YOUR_HIVEMQ_HOST",
+        "port": "8883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {}
+    },
+    {
+        "id": "d57560e893fd27e8",
+        "type": "ui_group",
+        "name": "Carte",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "610b8a3e470eaf14",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Cloud (à configurer)",
+        "broker": "YOUR_HIVEMQ_HOST",
+        "port": "8883",
+        "clientid": "node-red-supervision",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "682197bca64d5701",
+        "type": "ui_tab",
+        "name": "UI Group",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9b7433f4d5379a47",
+        "type": "ui_group",
+        "name": "Carte",
+        "tab": "682197bca64d5701",
+        "order": 1,
+        "disp": true,
+        "width": "32",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "90c8a720766e1958",
+        "type": "mqtt in",
+        "z": "61bb8238135bd324",
+        "name": "",
+        "topic": "LaVillette/science/pos",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "8b8b04e9f841ce29",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 360,
+        "wires": [
+            [
+                "b64947180a469765",
+                "356aa54732f71c3c"
+            ]
+        ]
+    },
+    {
+        "id": "b64947180a469765",
+        "type": "json",
+        "z": "61bb8238135bd324",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 370,
+        "y": 360,
+        "wires": [
+            [
+                "5bde74a053700393"
+            ]
+        ]
+    },
+    {
+        "id": "5bde74a053700393",
+        "type": "function",
+        "z": "61bb8238135bd324",
+        "name": "format + perimeter + zone",
+        "func": "let data = msg.payload;\nif (typeof data === \"string\") { try { data = JSON.parse(data); } catch (e) { } }\n\nlet lat = data.lat;\nlet lon = data.lon;\nlet device = data.deviceId || \"Tablette_Demo\";\n\n// Sécurité : si on n'a pas de coordonnées, on arrête\nif (lat === undefined || lon === undefined) return null;\n\n// 1. --- VERIFIER SI DANS LE PERIMETRE ---\nfunction isInside(lat, lon) {\n    let polygon = [\n        [48.895328, 2.385141], [48.897250, 2.389089],\n        [48.895363, 2.391112], [48.893677, 2.387507]\n    ];\n    let inside = false;\n    for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {\n        let xi = polygon[i][1], yi = polygon[i][0];\n        let xj = polygon[j][1], yj = polygon[j][0];\n        let intersect = ((yi > lat) != (yj > lat)) && (lon < (xj - xi) * (lat - yi) / (yj - yi) + xi);\n        if (intersect) inside = !inside;\n    }\n    return inside;\n}\nlet pointInside = isInside(lat, lon);\n\n// 2. --- CALCULER LA ZONE LA PLUS PROCHE ---\nconst zones = [\n    { name: \"Cinéma Louis Lumière\", lat: 48.895346, lon: 2.386430 },\n    { name: \"Bibliothèque (BSI)\", lat: 48.894941, lon: 2.387103 },\n    { name: \"La Géode\", lat: 48.894556, lon: 2.388694 },\n    { name: \"Cité des métiers\", lat: 48.895716, lon: 2.387414 },\n    { name: \"Cité des Sciences\", lat: 48.895729, lon: 2.388007 },\n    { name: \"Cité des Enfants\", lat: 48.895722, lon: 2.388680 },\n    { name: \"L'Argonaute\", lat: 48.895990, lon: 2.389187 }\n];\n\nlet closestZone = \"Inconnue\";\nlet minDistance = 999;\nzones.forEach(z => {\n    let dLat = lat - z.lat;\n    let dLon = (lon - z.lon) * Math.cos(lat * Math.PI / 180);\n    let dist = Math.sqrt(dLat * dLat + dLon * dLon);\n    if (dist < minDistance) { minDistance = dist; closestZone = z.name; }\n});\n\n// 3. --- CREER LE PANNEAU DE SUPERVISION ---\nlet statusHtml = pointInside\n    ? `<span style=\"color:#28a745; font-weight:bold;\">🟢 EN SÉCURITÉ (Périmètre)</span>`\n    : `<span style=\"color:#dc3545; font-weight:bold;\">🔴 ALERTE : HORS ZONE</span><br>\n       <button style=\"background-color:#dc3545; color:white; border:none; padding:8px; width:100%; margin-top:10px; border-radius:4px; font-weight:bold; cursor:pointer; animation: blinker 1s linear infinite;\">🚨 SIGNALER INTERVENTION</button>\n       <style>@keyframes blinker { 50% { opacity: 0.5; } }</style>`;\n\nlet panelHtml = `\n    <div style=\"background-color:rgba(255,255,255,0.95); padding:15px; border:2px solid ${pointInside ? '#28a745' : '#dc3545'}; border-radius:8px; min-width:250px; font-family:Arial, sans-serif; box-shadow: 0px 4px 6px rgba(0,0,0,0.3);\">\n        <h3 style=\"margin:0 0 10px 0; border-bottom:1px solid #ccc; padding-bottom:5px; color:#333;\">📡 Superviseur Live</h3>\n        <p style=\"margin:5px 0;\"><b>Appareil :</b> ${device}</p>\n        <p style=\"margin:5px 0;\"><b>Statut :</b> ${statusHtml}</p>\n        <p style=\"margin:5px 0;\"><b>Zone proche :</b> ${closestZone}</p>\n        <p style=\"margin:5px 0;\"><b>GPS :</b> ${lat.toFixed(5)}, ${lon.toFixed(5)}</p>\n        <p style=\"margin:10px 0 0 0; font-size:11px; color:#666; text-align:right;\"><i>Maj: ${new Date().toLocaleTimeString()}</i></p>\n    </div>\n`;\n\n// 4. --- ENVOI DES DONNÉES ---\nlet msgMap = {\n    payload: {\n        name: device, lat: lat, lon: lon,\n        icon: \"tablet\", iconColor: pointInside ? \"green\" : \"red\",\n        layer: \"Visiteurs\"\n    }\n};\n\nlet msgPanel = { payload: { command: { legend: panelHtml } } };\n\nlet msgOut = null;\nlet msgNotif = null;\n\nif (!pointInside) {\n    msgOut = { payload: { deviceId: device, alert: \"OUTSIDE\", lat: lat, lon: lon } };\n    msgNotif = { payload: \"⚠️ ALERTE : \" + device + \" est sorti du périmètre !\" };\n}\n\nreturn [[msgMap, msgPanel], msgOut, msgNotif];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 360,
+        "wires": [
+            [
+                "e24c56ccddc7cc2a"
+            ],
+            [
+                "8f6475dc036b84f4",
+                "f3e76c4f10ae165f"
+            ]
+        ]
+    },
+    {
+        "id": "3cf3f73c1f0df430",
+        "type": "ui_toast",
+        "z": "61bb8238135bd324",
+        "position": "top right",
+        "displayTime": "6",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "[msg.topic]",
+        "name": "OUTSIDE notification",
+        "x": 1060,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "8f6475dc036b84f4",
+        "type": "mqtt out",
+        "z": "61bb8238135bd324",
+        "name": "",
+        "topic": "LaVilette/science/outside",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8b8b04e9f841ce29",
+        "x": 890,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "f3e76c4f10ae165f",
+        "type": "function",
+        "z": "61bb8238135bd324",
+        "name": "format notif",
+        "func": "const p = msg.payload || {};\nmsg.topic = \"ALERTE - HORS PERIMETRE\";\n\nmsg.payload =\n    `Tablette: ${p.deviceId || \"?\"}\\n` +\n    `Role: ${p.role || \"visitor\"}\\n` +\n    `Lat/Lon: ${p.lat}, ${p.lon}`;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 460,
+        "wires": [
+            [
+                "3cf3f73c1f0df430"
+            ]
+        ]
+    },
+    {
+        "id": "e24c56ccddc7cc2a",
+        "type": "ui_worldmap",
+        "z": "61bb8238135bd324",
+        "group": "9b7433f4d5379a47",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "La Villette",
+        "lat": "",
+        "lon": "",
+        "zoom": "18",
+        "layer": "OSMG",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "true",
+        "coords": "none",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriDG,UKOS",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 860,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "2efd0ba59ad8e483",
+        "type": "inject",
+        "z": "61bb8238135bd324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 530,
+        "y": 240,
+        "wires": [
+            [
+                "8f49cb4acfab4707"
+            ]
+        ]
+    },
+    {
+        "id": "8f49cb4acfab4707",
+        "type": "function",
+        "z": "61bb8238135bd324",
+        "name": "Init Map",
+        "func": "let cmds = [];\n\n// L'ordre de centrage corrigé (avec le \"payload\" !)\ncmds.push({ payload: { command: { lat: 48.8957, lon: 2.3880, zoom: 17 } } });\n\nconst zones = [\n    {\n        id: \"Z1\", name: \"Cinéma Louis Lumière\", lat: 48.895346, lon: 2.386430,\n        icon: \"video-camera\", color: \"#8e44ad\",\n        img: \"https://media.discordapp.net/attachments/1330950342200004750/1474039635851350098/Zone1.jpg?ex=699865e3&is=69971463&hm=5030d482c33963336275122c63c58e02ab47dfb49d6b545b84d51a7cd09e5cbe&=&format=webp&width=1184&height=605\",\n        desc: \"Une salle spécialisée dans la projection de films documentaires et scientifiques.\"\n    },\n    {\n        id: \"Z2\", name: \"Bibliothèque (BSI)\", lat: 48.894941, lon: 2.387103,\n        icon: \"book\", color: \"#2980b9\",\n        img: \"https://media.discordapp.net/attachments/1330950342200004750/1474039636283101277/Zone2.jpg?ex=699865e3&is=69971463&hm=a416b27e4510548428b7c2372e552871812f9c1661cff5e879fc255c349f3ac4&=&format=webp&width=1184&height=788\",\n        desc: \"Un espace de ressources massif sur plusieurs étages, idéal pour consulter des ouvrages.\"\n    },\n    {\n        id: \"Z3\", name: \"La Géode\", lat: 48.894556, lon: 2.388694,\n        icon: \"globe\", color: \"#16a085\",\n        img: \"https://media.discordapp.net/attachments/1330950342200004750/1474039636748665014/Zone3.jpg?ex=699865e3&is=69971463&hm=d2c8818ef21a4ca490b80de85c958e90226d766afac6a722c87ced48ffff0ebd&=&format=webp&width=1184&height=809\",\n        desc: \"Cet immense miroir sphérique iconique abrite une salle de cinéma IMAX.\"\n    },\n    {\n        id: \"Z4\", name: \"Cité des métiers\", lat: 48.895716, lon: 2.387414,\n        icon: \"briefcase\", color: \"#e67e22\",\n        img: \"https://media.discordapp.net/attachments/1330950342200004750/1474039637113700514/Zone4.jpg?ex=699865e3&is=69971463&hm=97dfe20678992b4d46eb23aea30753427e2fe309efd585509e7f4b592cc91683&=&format=webp&width=1184&height=621\",\n        desc: \"Un espace de conseil et de documentation dédié à l'orientation professionnelle.\"\n    },\n    {\n        id: \"Z5\", name: \"Cité des Sciences\", lat: 48.895729, lon: 2.388007,\n        icon: \"flask\", color: \"#c0392b\",\n        img: \"https://media.discordapp.net/attachments/1330950342200004750/1474039637369688095/Zone5.jpg?ex=699865e3&is=69971463&hm=1063d480508b11d2aab843a32c646e599d859367c5a17f0cdb91755e4301e887&=&format=webp&width=1184&height=789\",\n        desc: \"Le cœur du complexe, regroupant les grandes expositions permanentes.\"\n    },\n    {\n        id: \"Z6\", name: \"Cité des Enfants\", lat: 48.895722, lon: 2.388680,\n        icon: \"child\", color: \"#f39c12\",\n        img: \"https://media.discordapp.net/attachments/1330950342200004750/1474039637700771954/Zone6.jpg?ex=699865e3&is=69971463&hm=de9ea8d5b71ae635be99652206be5ebc51a3d8da3a37f49ad0e65a2e7977714c&=&format=webp&width=720&height=440\",\n        desc: \"Un espace ludique divisé par tranches d'âge où les plus jeunes apprennent en s'amusant.\"\n    },\n    {\n        id: \"Z7\", name: \"L'Île des Tortuga\", lat: 48.895990, lon: 2.389187,\n        icon: \"gamepad\", color: \"#34495e\",\n        img: \"https://media.discordapp.net/attachments/1330950342200004750/1474039638049030209/Zone7.jpg?ex=699865e4&is=69971464&hm=5e4adc117bab905e6cc899bf23f26869f28e50e02fb2a6ad9a2d1554976ef0dc&=&format=webp&width=1184&height=891\",\n        desc: \"Un espace de jeux et de détente conçu pour que les enfants se dépensent.\"\n    }\n];\n\nzones.forEach(z => {\n    cmds.push({\n        payload: {\n            name: z.name,\n            lat: z.lat,\n            lon: z.lon,\n            icon: z.icon,\n            iconColor: z.color,\n            layer: \"Zones d'intérêt\",\n            popup: \"<div style='text-align:center; max-width:260px; font-family:Arial, sans-serif;'><b style='font-size:15px; color:\" + z.color + \";'>\" + z.name + \"</b><br><img src='\" + z.img + \"' width='250' style='margin-top:10px; margin-bottom:10px; border-radius:6px; box-shadow: 0px 2px 4px rgba(0,0,0,0.2);'><br><div style='font-size:13px; color:#444; line-height:1.4;'>\" + z.desc + \"</div></div>\"\n        }\n    });\n});\n\nreturn [cmds];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 240,
+        "wires": [
+            [
+                "e24c56ccddc7cc2a"
+            ]
+        ]
+    },
+    {
+        "id": "cb9b890f47ad4bbc",
+        "type": "inject",
+        "z": "61bb8238135bd324",
+        "name": "Simuler la tablette HORS ZONE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{     \"deviceId\": \"TAB5_01\",     \"lat\": 48.898500,     \"lon\": 2.392000 }",
+        "payloadType": "json",
+        "x": 210,
+        "y": 240,
+        "wires": [
+            [
+                "5bde74a053700393"
+            ]
+        ]
+    },
+    {
+        "id": "5e06590cc7c28568",
+        "type": "inject",
+        "z": "61bb8238135bd324",
+        "name": "Simuler la tablette à la Cité des Enfants",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{     \"deviceId\": \"TAB5_01\",     \"lat\": 48.895722,     \"lon\": 2.388680 }",
+        "payloadType": "json",
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "5bde74a053700393"
+            ]
+        ]
+    },
+    {
+        "id": "356aa54732f71c3c",
+        "type": "debug",
+        "z": "61bb8238135bd324",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "623835bc2a998e2e",
+        "type": "inject",
+        "z": "61bb8238135bd324",
+        "name": "Simuler la tablette au Cinéma ",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{     \"deviceId\": \"TAB5_01\",     \"lat\": 48.895346,     \"lon\": 2.386430 }",
+        "payloadType": "json",
+        "x": 220,
+        "y": 120,
+        "wires": [
+            [
+                "5bde74a053700393"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_in_pos",
+        "type": "mqtt in",
+        "z": "flow_main",
+        "name": "GPS IN",
+        "topic": "LaVilette/science/pos",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "broker_hivemq",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "json_parse"
+            ]
+        ]
+    },
+    {
+        "id": "json_parse",
+        "type": "json",
+        "z": "flow_main",
+        "name": "JSON",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 350,
+        "y": 140,
+        "wires": [
+            [
+                "fn_check"
+            ]
+        ]
+    },
+    {
+        "id": "fn_check",
+        "type": "function",
+        "z": "flow_main",
+        "name": "check perimeter + format map",
+        "func": "// ---- Perimetre (polygone) ----\nconst PERIM = [\n  {lat:48.895328, lon:2.385141}, // NW\n  {lat:48.897250, lon:2.389089}, // NE\n  {lat:48.895363, lon:2.391112}, // SE\n  {lat:48.893677, lon:2.387507}  // SW\n];\n\nfunction insidePoly(pt, poly){\n  let x = pt.lon, y = pt.lat;\n  let inside = false;\n  for (let i=0, j=poly.length-1; i<poly.length; j=i++){\n    let xi = poly[i].lon, yi = poly[i].lat;\n    let xj = poly[j].lon, yj = poly[j].lat;\n    let intersect = ((yi>y)!=(yj>y)) && (x < (xj-xi)*(y-yi)/(yj-yi+1e-12) + xi);\n    if (intersect) inside = !inside;\n  }\n  return inside;\n}\n\nconst p = msg.payload || {};\nconst lat = Number(p.lat);\nconst lon = Number(p.lon);\nif (!isFinite(lat) || !isFinite(lon)) return null;\n\nconst deviceId = p.deviceId || p.id || \"UNKNOWN\";\nconst role = p.role || \"visitor\";\nconst inside = insidePoly({lat, lon}, PERIM);\n\n// payload pour la carte\nconst mapPayload = {\n  deviceId,\n  role,\n  lat,\n  lon,\n  acc: p.acc ?? null,\n  inside,\n  ts: p.ts || Date.now()\n};\n\n// OUT 1 -> map\nconst msgMap = { payload: mapPayload };\n\n// OUT 2 -> outside (anti-spam 15s)\nif (!inside) {\n  const now = Date.now();\n  const last = flow.get('lastOutside') || {};\n  if (last[deviceId] && now - last[deviceId] < 15000) {\n    return [msgMap, null];\n  }\n  last[deviceId] = now;\n  flow.set('lastOutside', last);\n\n  const msgOut = {\n    topic: 'LaVilette/science/outside',\n    payload: {\n      type: 'OUTSIDE',\n      deviceId,\n      role,\n      lat,\n      lon,\n      ts: mapPayload.ts\n    }\n  };\n\n  return [msgMap, msgOut];\n}\n\nreturn [msgMap, null];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 140,
+        "wires": [
+            [
+                "ui_map"
+            ],
+            [
+                "mqtt_out_outside",
+                "fn_format_notif"
+            ]
+        ]
+    },
+    {
+        "id": "ui_map",
+        "type": "ui_template",
+        "z": "flow_main",
+        "group": "grp_map",
+        "name": "map",
+        "order": 1,
+        "width": "12",
+        "height": "10",
+        "format": "<div id=\"mapwrap\">\n  <div id=\"m\"></div>\n  <div id=\"panel\">\n    <div class=\"title\">IIOT Tracker</div>\n    <div class=\"sub\" id=\"stat\">En attente…</div>\n    <div class=\"row\"><span>Device</span><b id=\"dev\">—</b></div>\n    <div class=\"row\"><span>Role</span><b id=\"role\">—</b></div>\n    <div class=\"row\"><span>Coords</span><b id=\"coords\">—</b></div>\n    <div class=\"row\"><span>Inside</span><b id=\"inside\">—</b></div>\n    <div class=\"row\"><span>Dernière MAJ</span><b id=\"ts\">—</b></div>\n    <div class=\"btnrow\">\n      <button id=\"btnCenter\">Centrer</button>\n      <button id=\"btnClear\">Effacer trace</button>\n    </div>\n  </div>\n</div>\n\n<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\" />\n<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n\n<style>\n  #mapwrap{display:flex;gap:14px;align-items:stretch;}\n  #m{\n    height: 86vh; min-height: 700px; width: 100%;\n    border-radius: 16px; overflow: hidden;\n    box-shadow: 0 10px 25px rgba(0,0,0,.12);\n    flex: 2;\n  }\n  #panel{\n    flex: 1;\n    background: #fff;\n    border-radius: 16px;\n    padding: 14px 16px;\n    box-shadow: 0 10px 25px rgba(0,0,0,.10);\n    min-width: 280px;\n  }\n  .title{font-size:20px;font-weight:800;}\n  .sub{margin:6px 0 12px;color:#666}\n  .row{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid #eee}\n  .row span{color:#666}\n  .btnrow{display:flex;gap:8px;margin-top:12px}\n  button{border:0;border-radius:10px;padding:10px 12px;font-weight:700;cursor:pointer}\n  #btnCenter{background:#1976d2;color:#fff}\n  #btnClear{background:#eee}\n\n  @media (max-width: 900px){\n    #mapwrap{flex-direction:column;}\n    #m{height: 70vh; min-height: 520px;}\n  }\n</style>\n\n<script>\n(function(scope){\n  // Perimetre polygon\n  const PERIM = [\n    [48.895328,2.385141],\n    [48.897250,2.389089],\n    [48.895363,2.391112],\n    [48.893677,2.387507]\n  ];\n\n  const center = [48.895729, 2.388007];\n\n  const map = L.map('m', { zoomControl:true }).setView(center, 17);\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 20 }).addTo(map);\n\n  const poly = L.polygon(PERIM, {color:'#ff3b30', weight:3, fillOpacity:0.08}).addTo(map);\n  map.fitBounds(poly.getBounds(), {padding:[20,20]});\n\n  const markers = {}; // deviceId -> marker\n  const tracks = {};  // deviceId -> polyline\n\n  function iconColor(role, inside){\n    // simple: inside = bleu/vert, outside = rouge\n    if (!inside) return '#ff3b30';\n    return (role === 'collector') ? '#0a84ff' : '#34c759';\n  }\n\n  function setPanel(p){\n    document.getElementById('stat').textContent = p.inside ? 'Dans le périmètre' : 'HORS périmètre !';\n    document.getElementById('dev').textContent = p.deviceId;\n    document.getElementById('role').textContent = p.role;\n    document.getElementById('coords').textContent = `${p.lat.toFixed(6)}, ${p.lon.toFixed(6)}`;\n    document.getElementById('inside').textContent = p.inside ? 'YES' : 'NO';\n    document.getElementById('ts').textContent = new Date(p.ts).toLocaleTimeString();\n  }\n\n  function upsert(p){\n    const id = p.deviceId || 'UNKNOWN';\n    const latlng = [p.lat, p.lon];\n\n    // marker\n    const col = iconColor(p.role, p.inside);\n    const html = `<div style=\"width:18px;height:18px;border-radius:50%;background:${col};border:3px solid #fff;box-shadow:0 2px 10px rgba(0,0,0,.25)\"></div>`;\n    const ico = L.divIcon({className:'', html, iconSize:[18,18], iconAnchor:[9,9]});\n\n    if (!markers[id]) {\n      markers[id] = L.marker(latlng, {icon: ico}).addTo(map).bindPopup(id);\n    } else {\n      markers[id].setLatLng(latlng);\n      markers[id].setIcon(ico);\n    }\n\n    // track\n    if (!tracks[id]) {\n      tracks[id] = L.polyline([latlng], {weight:3, opacity:0.7}).addTo(map);\n    } else {\n      tracks[id].addLatLng(latlng);\n      // limite points\n      const pts = tracks[id].getLatLngs();\n      if (pts.length > 300) tracks[id].setLatLngs(pts.slice(-300));\n    }\n\n    setPanel(p);\n  }\n\n  // buttons\n  document.getElementById('btnCenter').onclick = () => map.fitBounds(poly.getBounds(), {padding:[20,20]});\n  document.getElementById('btnClear').onclick = () => {\n    Object.values(tracks).forEach(pl => pl.setLatLngs([]));\n  };\n\n  scope.$watch('msg', function(msg){\n    if(!msg || !msg.payload) return;\n    const p = msg.payload;\n    if (typeof p.lat !== 'number' || typeof p.lon !== 'number') return;\n    upsert(p);\n  });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 840,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "mqtt_out_outside",
+        "type": "mqtt out",
+        "z": "flow_main",
+        "name": "LaVilette/science/outside",
+        "topic": "LaVilette/science/outside",
+        "qos": "0",
+        "retain": "",
+        "broker": "broker_hivemq",
+        "x": 860,
+        "y": 190,
+        "wires": []
+    },
+    {
+        "id": "fn_format_notif",
+        "type": "function",
+        "z": "flow_main",
+        "name": "format notif",
+        "func": "const p = msg.payload || {};\nmsg.topic = 'ALERTE - HORS PERIMETRE';\nmsg.payload = `Tablette: ${p.deviceId || '?'}\\nRole: ${p.role || 'visitor'}\\nLat/Lon: ${p.lat}, ${p.lon}`;\nreturn msg;",
+        "outputs": 1,
+        "x": 820,
+        "y": 250,
+        "wires": [
+            [
+                "ui_notif"
+            ]
+        ]
+    },
+    {
+        "id": "ui_notif",
+        "type": "ui_toast",
+        "z": "flow_main",
+        "position": "top right",
+        "displayTime": "6",
+        "highlight": "red",
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "{{msg.topic}}",
+        "name": "OUTSIDE notification",
+        "x": 1030,
+        "y": 250,
+        "wires": []
+    },
+    {
+        "id": "acd59911689a0ed6",
+        "type": "mqtt in",
+        "z": "0f06f7332fa830cd",
+        "name": "LaVilette/science/pos",
+        "topic": "LaVilette/science/pos",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "610b8a3e470eaf14",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "8c79e5f9bb061faf"
+            ]
+        ]
+    },
+    {
+        "id": "8c79e5f9bb061faf",
+        "type": "json",
+        "z": "0f06f7332fa830cd",
+        "name": "JSON parse",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 360,
+        "y": 140,
+        "wires": [
+            [
+                "76c7854a5d9d7324"
+            ]
+        ]
+    },
+    {
+        "id": "76c7854a5d9d7324",
+        "type": "function",
+        "z": "0f06f7332fa830cd",
+        "name": "format + perimetre + zone (2 sorties)",
+        "func": "// Entrée attendue: msg.payload = { deviceId, role, lat, lon, ts }\nconst p = msg.payload || {};\n\n// --- Perimetre (rectangle)\nconst perimeter = [\n  [48.895328, 2.385141], // NW\n  [48.897250, 2.389089], // NE\n  [48.895363, 2.391112], // SE\n  [48.893677, 2.387507]  // SW\n];\n\n// --- Zones (centres) + images servies par Node-RED: /zones/ZoneX.jpg\nconst zones = [\n  { key:\"Zone1\", name:\"Cinéma Louis Lumière\", lat:48.895346, lon:2.386430, imgUrl:\"/zones/Zone1.jpg\" },\n  { key:\"Zone2\", name:\"Bibliothèque des Sciences et de l'Industrie\", lat:48.894941, lon:2.387103, imgUrl:\"/zones/Zone2.jpg\" },\n  { key:\"Zone3\", name:\"Le géode\", lat:48.894556, lon:2.388694, imgUrl:\"/zones/Zone3.jpg\" },\n  { key:\"Zone4\", name:\"Cité des métiers\", lat:48.895716, lon:2.387414, imgUrl:\"/zones/Zone4.jpg\" },\n  { key:\"Zone5\", name:\"Cité des Sciences et de l'Industrie\", lat:48.895729, lon:2.388007, imgUrl:\"/zones/Zone5.jpg\" },\n  { key:\"Zone6\", name:\"Cité des Enfants\", lat:48.895722, lon:2.388680, imgUrl:\"/zones/Zone6.jpg\" },\n  { key:\"Zone7\", name:\"L'ile des Toruga\", lat:48.895990, lon:2.389187, imgUrl:\"/zones/Zone7.jpg\" }\n];\n\nfunction insidePoly(lat, lon, poly){\n  let inside = false;\n  for (let i=0, j=poly.length-1; i<poly.length; j=i++){\n    const xi = poly[i][0], yi = poly[i][1];\n    const xj = poly[j][0], yj = poly[j][1];\n    const intersect = ((yi > lon) !== (yj > lon))\n      && (lat < (xj - xi) * (lon - yi) / (yj - yi + 1e-12) + xi);\n    if(intersect) inside = !inside;\n  }\n  return inside;\n}\n\nfunction dist2(aLat,aLon,bLat,bLon){\n  const dx = (aLat-bLat);\n  const dy = (aLon-bLon);\n  return dx*dx + dy*dy;\n}\n\nif (p.lat == null || p.lon == null) {\n  return [null, null];\n}\n\n// Zone la plus proche\nlet best = null;\nlet bestD = Infinity;\nzones.forEach(z=>{\n  const d = dist2(p.lat, p.lon, z.lat, z.lon);\n  if(d < bestD){ bestD = d; best = z; }\n});\n\nconst inside = insidePoly(p.lat, p.lon, perimeter);\n\nconst payloadOut = {\n  deviceId: p.deviceId || p.device || \"visitor\",\n  role: p.role || \"visitor\",\n  lat: Number(p.lat),\n  lon: Number(p.lon),\n  ts: p.ts || Date.now(),\n  inside: inside,\n  zoneKey: best ? best.key : null,\n  zoneName: best ? best.name : null,\n  perimeter: perimeter,\n  zones: zones\n};\n\n// Stocke la dernière position pour debug/API\nflow.set('lastPos', payloadOut);\n\n// Sortie 1: vers la map\nconst msgMap = { payload: payloadOut };\n\n// Sortie 2: only outside\nlet msgOutside = null;\nif (!inside) {\n  msgOutside = {\n    topic: \"LaVilette/science/outside\",\n    payload: {\n      deviceId: payloadOut.deviceId,\n      role: payloadOut.role,\n      lat: payloadOut.lat,\n      lon: payloadOut.lon,\n      ts: payloadOut.ts,\n      zoneName: payloadOut.zoneName\n    }\n  };\n}\n\nreturn [msgMap, msgOutside];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 140,
+        "wires": [
+            [],
+            [
+                "946a03908f62b1f8",
+                "c0dce85f3c550c6e"
+            ]
+        ]
+    },
+    {
+        "id": "946a03908f62b1f8",
+        "type": "mqtt out",
+        "z": "0f06f7332fa830cd",
+        "name": "Publish outside",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "610b8a3e470eaf14",
+        "x": 940,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c0dce85f3c550c6e",
+        "type": "function",
+        "z": "0f06f7332fa830cd",
+        "name": "format notif outside",
+        "func": "const p = msg.payload || {};\nmsg.payload = `⚠️ TABLETTE HORS PÉRIMÈTRE\\nDevice: ${p.deviceId || \"?\"}\\nZone proche: ${p.zoneName || \"?\"}\\nCoords: ${p.lat}, ${p.lon}`;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 280,
+        "wires": [
+            [
+                "e9a65d5f095d5edf"
+            ]
+        ]
+    },
+    {
+        "id": "e9a65d5f095d5edf",
+        "type": "ui_toast",
+        "z": "0f06f7332fa830cd",
+        "position": "top right",
+        "displayTime": "5",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "OUTSIDE notification",
+        "x": 1180,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "91295fcc01bb9128",
+        "type": "http in",
+        "z": "0f06f7332fa830cd",
+        "name": "GET /api/lastpos",
+        "url": "/api/lastpos",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "be6c037740c2230f"
+            ]
+        ]
+    },
+    {
+        "id": "be6c037740c2230f",
+        "type": "function",
+        "z": "0f06f7332fa830cd",
+        "name": "retourne flow.lastPos",
+        "func": "const last = flow.get('lastPos');\nmsg.payload = last || { ok:false, msg:\"no lastPos yet\" };\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 360,
+        "wires": [
+            [
+                "a573a7c92dee3b57"
+            ]
+        ]
+    },
+    {
+        "id": "a573a7c92dee3b57",
+        "type": "http response",
+        "z": "0f06f7332fa830cd",
+        "name": "HTTP 200",
+        "statusCode": "",
+        "headers": {},
+        "x": 610,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "a1_http_zones",
+        "type": "http in",
+        "z": "flow_static",
+        "name": "GET /zones/:file",
+        "url": "/zones/:file",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "a2_fn_zone_path"
+            ]
+        ]
+    },
+    {
+        "id": "a2_fn_zone_path",
+        "type": "function",
+        "z": "flow_static",
+        "name": "Build path zones",
+        "func": "// ⚠️ Mets TON chemin exact ici (dossier public)\n// Exemple chez toi (à adapter si besoin):\nconst base = \"C:/Users/devra/.node-red/public/zones/\";\n\nconst f = (msg.req.params.file || \"\").toString();\n// sécurité: bloque ../\nif (f.includes(\"..\") || f.includes(\"\\\\\") || f.includes(\"/\")) {\n  msg.statusCode = 400;\n  msg.payload = \"Bad filename\";\n  return msg;\n}\n\nmsg.filename = base + f;\n\n// content-type basique\nif (f.toLowerCase().endsWith(\".jpg\") || f.toLowerCase().endsWith(\".jpeg\")) {\n  msg.headers = { \"Content-Type\": \"image/jpeg\" };\n} else if (f.toLowerCase().endsWith(\".png\")) {\n  msg.headers = { \"Content-Type\": \"image/png\" };\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 120,
+        "wires": [
+            [
+                "a3_file_in",
+                "a4_catch_file"
+            ]
+        ]
+    },
+    {
+        "id": "a3_file_in",
+        "type": "file in",
+        "z": "flow_static",
+        "name": "Read file",
+        "filename": "",
+        "filenameType": "msg",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 630,
+        "y": 120,
+        "wires": [
+            [
+                "a5_http_resp"
+            ]
+        ]
+    },
+    {
+        "id": "a4_catch_file",
+        "type": "function",
+        "z": "flow_static",
+        "name": "If missing -> 404",
+        "func": "if (msg.payload && msg.payload.code === \"ENOENT\") {\n  msg.statusCode = 404;\n  msg.payload = \"Not found\";\n  return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 180,
+        "wires": [
+            [
+                "a5_http_resp"
+            ]
+        ]
+    },
+    {
+        "id": "a5_http_resp",
+        "type": "http response",
+        "z": "flow_static",
+        "name": "",
+        "statusCode": "",
+        "headers": "",
+        "x": 840,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b1_http_leaflet_js",
+        "type": "http in",
+        "z": "flow_static",
+        "name": "GET /leaflet.js",
+        "url": "/leaflet.js",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 260,
+        "wires": [
+            [
+                "b2_fn_leaflet_js_path"
+            ]
+        ]
+    },
+    {
+        "id": "b2_fn_leaflet_js_path",
+        "type": "function",
+        "z": "flow_static",
+        "name": "Build path leaflet.js",
+        "func": "// ⚠️ Mets TON chemin exact du fichier leaflet.js ici\nconst file = \"C:/Users/devra/.node-red/public/leaflet.js\";\nmsg.filename = file;\nmsg.headers = { \"Content-Type\": \"application/javascript\" };\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 260,
+        "wires": [
+            [
+                "b3_file_in"
+            ]
+        ]
+    },
+    {
+        "id": "b3_file_in",
+        "type": "file in",
+        "z": "flow_static",
+        "name": "Read leaflet.js",
+        "filename": "",
+        "filenameType": "msg",
+        "format": "",
+        "chunk": false,
+        "sendError": true,
+        "encoding": "utf8",
+        "allProps": false,
+        "x": 650,
+        "y": 260,
+        "wires": [
+            [
+                "b4_http_resp"
+            ]
+        ]
+    },
+    {
+        "id": "b4_http_resp",
+        "type": "http response",
+        "z": "flow_static",
+        "name": "",
+        "statusCode": "",
+        "headers": "",
+        "x": 850,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "814ea8a205129be5",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.5",
+            "node-red-contrib-web-worldmap-cn": "4.8.2"
+        }
+    }
+]
