@@ -26,7 +26,6 @@ Based on the technical roadmap, the repository is organized as follows:
 * **`Data/`**:
     * `dataset.csv`: Collected WiFi MAC addresses and RSSI levels.
     * `model_weights.json`: The Neural Network weights (ANN) for on-device or cloud inference.
-* **`Documentation/`**: (Optional) PDF or PPT presentations explaining the project.
 
 ---
 
@@ -49,15 +48,14 @@ Based on the technical roadmap, the repository is organized as follows:
 
 ### **3. The image is not displaying (Black screen).**
 **Answer:** The image format might be incompatible.
-**Solution:** Images must be **JPG** (Baseline/Standard, not Progressive) and should be resized to **480x272 pixels** to fit the RAM.
+**Solution:** Images must be **JPG or PNG** (Baseline/Standard, not Progressive) and should be resized to **480x272 pixels** to fit the RAM.
 
 ---
 
 ## 📡 Connectivity
-* **WiFi**: SSID `S24 Djo98`
-* **MQTT Topic**: `LaVilette/pos` (receives `{"location": "zone 1"}`)
+* **MQTT Topic**: `LaVilette/sciencz/pos` and   `LaVilette/science/wifi/data`
 
 ---
 
 ## 👨‍💻 Author
-Developed as part of the Cité des Sciences Interactive Guide project.
+Developed as part of the Cité des Sciences Interactive Guide projecT.
