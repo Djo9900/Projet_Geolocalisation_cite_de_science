@@ -33,6 +33,7 @@ Based on the technical roadmap, the repository is organized as follows:
 * **M5Stack CoreS3 (Tab5)** (ESP32-S3)
 * **Micro SD Card**: Must be formatted in **FAT32**.
 * **Broker**: HiveMQ Cloud (MQTT)
+* **Node RED**
 
 ---
 
